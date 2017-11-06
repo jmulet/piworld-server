@@ -1,0 +1,223 @@
+2017-11-05T08:53:55.590Z - info: Sun Nov 05 2017 09:53:55 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T08:57:22.427Z - info: Sun Nov 05 2017 09:57:22 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T09:00:02.310Z - info: Sun Nov 05 2017 10:00:02 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T09:02:44.688Z - info: Sun Nov 05 2017 10:02:44 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T09:03:04.583Z - info: Sun Nov 05 2017 10:03:04 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T09:07:21.038Z - info: Sun Nov 05 2017 10:07:21 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T09:11:23.291Z - info: Sun Nov 05 2017 10:11:23 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T09:14:21.155Z - info: Sun Nov 05 2017 10:14:21 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T09:15:00.275Z - info: Sun Nov 05 2017 10:15:00 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T09:15:40.115Z - info: Sun Nov 05 2017 10:15:40 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T09:16:03.503Z - info: Sun Nov 05 2017 10:16:03 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T09:17:48.035Z - info: Sun Nov 05 2017 10:17:48 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T09:18:46.232Z - info: Sun Nov 05 2017 10:18:46 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T09:19:26.864Z - info: Sun Nov 05 2017 10:19:26 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T09:19:52.518Z - info: Sun Nov 05 2017 10:19:52 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T09:22:40.240Z - info: Sun Nov 05 2017 10:22:40 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T09:28:42.551Z - info: Sun Nov 05 2017 10:28:42 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T09:30:00.318Z - info: Sun Nov 05 2017 10:30:00 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T09:30:49.868Z - info: Sun Nov 05 2017 10:30:49 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T09:32:24.630Z - info: Sun Nov 05 2017 10:32:24 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T09:36:05.887Z - info: Sun Nov 05 2017 10:36:05 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T09:37:27.228Z - info: Sun Nov 05 2017 10:37:27 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T09:45:08.977Z - info: Sun Nov 05 2017 10:45:08 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T09:45:37.921Z - info: Sun Nov 05 2017 10:45:37 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T09:46:17.691Z - info: Sun Nov 05 2017 10:46:17 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T09:48:39.118Z - info: Sun Nov 05 2017 10:48:39 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T09:48:50.864Z - info: Sun Nov 05 2017 10:48:50 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T09:48:57.309Z - info: Sun Nov 05 2017 10:48:57 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T09:49:52.219Z - info: Sun Nov 05 2017 10:49:52 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T09:52:47.972Z - info: Sun Nov 05 2017 10:52:47 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T09:53:15.619Z - info: Sun Nov 05 2017 10:53:15 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T09:53:15.631Z - error:  Error: Table 'imaths.udddsers' doesn't exist
+    at Packet.asError (/Users/josep/angular-workspace/piworld-server/node_modules/mysql2/lib/packets/packet.js:703:13)
+    at Prepare.Command.execute (/Users/josep/angular-workspace/piworld-server/node_modules/mysql2/lib/commands/command.js:28:22)
+    at PoolConnection.Connection.handlePacket (/Users/josep/angular-workspace/piworld-server/node_modules/mysql2/lib/connection.js:515:28)
+    at PacketParser.onPacket (/Users/josep/angular-workspace/piworld-server/node_modules/mysql2/lib/connection.js:94:16)
+    at PacketParser.executeStart (/Users/josep/angular-workspace/piworld-server/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/josep/angular-workspace/piworld-server/node_modules/mysql2/lib/connection.js:102:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+2017-11-05T09:57:10.833Z - info: Sun Nov 05 2017 10:57:10 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T09:57:10.852Z - error:  Error: Table 'imaths.udddsers' doesn't exist
+    at Packet.asError (/Users/josep/angular-workspace/piworld-server/node_modules/mysql2/lib/packets/packet.js:703:13)
+    at Prepare.Command.execute (/Users/josep/angular-workspace/piworld-server/node_modules/mysql2/lib/commands/command.js:28:22)
+    at PoolConnection.Connection.handlePacket (/Users/josep/angular-workspace/piworld-server/node_modules/mysql2/lib/connection.js:515:28)
+    at PacketParser.onPacket (/Users/josep/angular-workspace/piworld-server/node_modules/mysql2/lib/connection.js:94:16)
+    at PacketParser.executeStart (/Users/josep/angular-workspace/piworld-server/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/josep/angular-workspace/piworld-server/node_modules/mysql2/lib/connection.js:102:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+2017-11-05T09:57:22.574Z - info: Sun Nov 05 2017 10:57:22 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T09:58:09.453Z - info: Sun Nov 05 2017 10:58:09 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T09:58:31.532Z - info: Sun Nov 05 2017 10:58:31 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T09:59:39.203Z - info: Sun Nov 05 2017 10:59:39 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T09:59:45.732Z - info: Sun Nov 05 2017 10:59:45 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T10:00:01.694Z - info: Sun Nov 05 2017 11:00:01 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T10:01:03.192Z - info: Sun Nov 05 2017 11:01:03 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T10:16:50.563Z - info: Sun Nov 05 2017 11:16:50 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T10:18:20.318Z - info: Sun Nov 05 2017 11:18:20 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T10:18:33.096Z - info: Sun Nov 05 2017 11:18:33 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T10:18:38.086Z - info: Sun Nov 05 2017 11:18:38 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T10:23:26.041Z - info: Sun Nov 05 2017 11:23:26 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T10:23:46.267Z - info: Sun Nov 05 2017 11:23:46 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T10:23:53.273Z - info: Sun Nov 05 2017 11:23:53 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T10:24:21.826Z - info: Sun Nov 05 2017 11:24:21 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T10:24:50.238Z - info: Sun Nov 05 2017 11:24:50 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T10:25:01.847Z - info: Sun Nov 05 2017 11:25:01 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T10:30:27.942Z - info: Sun Nov 05 2017 11:30:27 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T10:30:27.943Z - debug: query= SELECT * FROM users WHERE id=? prepared= 0=522
+2017-11-05T10:30:27.963Z - debug: rows.length=1
+2017-11-05T10:30:27.963Z - debug: query= SELECT * FROM logins WHERE idUser=? prepared= 0=522
+2017-11-05T10:30:27.972Z - debug: rows.length=871
+2017-11-05T10:32:00.744Z - info: Sun Nov 05 2017 11:32:00 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T10:32:00.745Z - debug: query= SELECT * FROM users WHERE id=? prepared= 0=522
+2017-11-05T10:32:00.765Z - debug: rows.length=1
+2017-11-05T10:32:00.765Z - debug: query= SELECT * FROM logins WHERE idUser=? prepared= 0=522
+2017-11-05T10:32:00.772Z - debug: rows.length=871
+2017-11-05T10:46:27.818Z - info: Sun Nov 05 2017 11:46:27 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T10:46:27.834Z - debug: query= SELECT * FROM users WHERE id=? prepared= 0=522
+2017-11-05T10:46:27.839Z - debug: rows.length=1
+2017-11-05T10:46:27.839Z - debug: query= SELECT * FROM logins WHERE idUser=? prepared= 0=522
+2017-11-05T10:46:27.847Z - debug: rows.length=871
+2017-11-05T10:51:29.368Z - info: Sun Nov 05 2017 11:51:29 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T10:51:29.383Z - debug: query= SELECT * FROM users WHERE id=? prepared= 0=522
+2017-11-05T10:51:29.388Z - debug: rows.length=1
+2017-11-05T10:51:29.388Z - debug: query= SELECT * FROM logins WHERE idUser=? prepared= 0=522
+2017-11-05T10:51:29.395Z - debug: rows.length=871
+2017-11-05T14:32:06.773Z - info: Sun Nov 05 2017 15:32:06 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T14:33:34.809Z - info: Sun Nov 05 2017 15:33:34 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T14:33:34.828Z - debug: query= SELECT * FROM `users` prepared=
+2017-11-05T14:33:34.844Z - debug: rows.length=901
+2017-11-05T14:35:28.594Z - info: Sun Nov 05 2017 15:35:28 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T14:35:59.288Z - info: Sun Nov 05 2017 15:35:59 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T14:35:59.303Z - debug: query= SELECT * FROM `users` WHERE `id`='522' prepared=
+2017-11-05T14:35:59.307Z - debug: rows.length=1
+2017-11-05T14:38:00.659Z - info: Sun Nov 05 2017 15:38:00 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T14:38:00.675Z - debug: query= SELECT `id as idUser`,`fullname` FROM `users` WHERE `id`='522' prepared=
+2017-11-05T14:38:00.676Z - error:  Error: Unknown column 'id as idUser' in 'field list'
+    at Packet.asError (/Users/josep/angular-workspace/piworld-server/node_modules/mysql2/lib/packets/packet.js:703:13)
+    at Prepare.Command.execute (/Users/josep/angular-workspace/piworld-server/node_modules/mysql2/lib/commands/command.js:28:22)
+    at PoolConnection.Connection.handlePacket (/Users/josep/angular-workspace/piworld-server/node_modules/mysql2/lib/connection.js:515:28)
+    at PacketParser.onPacket (/Users/josep/angular-workspace/piworld-server/node_modules/mysql2/lib/connection.js:94:16)
+    at PacketParser.executeStart (/Users/josep/angular-workspace/piworld-server/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/josep/angular-workspace/piworld-server/node_modules/mysql2/lib/connection.js:102:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+2017-11-05T14:44:59.884Z - info: Sun Nov 05 2017 15:44:59 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T14:45:25.289Z - info: Sun Nov 05 2017 15:45:25 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T14:45:25.304Z - debug: query= SELECT `id` as `idUser`,`fullname` FROM `users` WHERE `id`='522' prepared=
+2017-11-05T14:45:25.308Z - debug: rows.length=1
+2017-11-05T14:46:32.612Z - info: Sun Nov 05 2017 15:46:32 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T14:46:32.628Z - debug: query= SELECT `id` as `idUser`,`fullname` FROM `users` WHERE `id`=? prepared= 0=522
+2017-11-05T14:46:32.634Z - debug: rows.length=1
+2017-11-05T14:53:56.858Z - info: Sun Nov 05 2017 15:53:56 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T14:53:56.874Z - debug: query= SELECT `id` as `idUser`,`fullname` FROM `users` WHERE  `username`=?  LIMIT 1 prepared= 0=pep.mulet
+2017-11-05T14:53:56.879Z - debug: rows.length=1
+2017-11-05T14:54:28.458Z - info: Sun Nov 05 2017 15:54:28 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T14:54:28.473Z - debug: query= SELECT `id` as `idUser`,`fullname` FROM `users` WHERE AND `foo`=?  LIMIT 1 prepared= 0=pep.mulet, 1=2
+2017-11-05T14:54:28.483Z - error:  Error: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'AND `foo`=?  LIMIT 1' at line 1
+    at Packet.asError (/Users/josep/angular-workspace/piworld-server/node_modules/mysql2/lib/packets/packet.js:703:13)
+    at Prepare.Command.execute (/Users/josep/angular-workspace/piworld-server/node_modules/mysql2/lib/commands/command.js:28:22)
+    at PoolConnection.Connection.handlePacket (/Users/josep/angular-workspace/piworld-server/node_modules/mysql2/lib/connection.js:515:28)
+    at PacketParser.onPacket (/Users/josep/angular-workspace/piworld-server/node_modules/mysql2/lib/connection.js:94:16)
+    at PacketParser.executeStart (/Users/josep/angular-workspace/piworld-server/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/josep/angular-workspace/piworld-server/node_modules/mysql2/lib/connection.js:102:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+2017-11-05T14:54:57.879Z - info: Sun Nov 05 2017 15:54:57 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T14:54:57.894Z - debug: query= SELECT `id` as `idUser`,`fullname` FROM `users` WHERE  `username`=? AND `foo`=?  LIMIT 1 prepared= 0=pep.mulet, 1=2
+2017-11-05T14:54:57.896Z - error:  Error: Unknown column 'foo' in 'where clause'
+    at Packet.asError (/Users/josep/angular-workspace/piworld-server/node_modules/mysql2/lib/packets/packet.js:703:13)
+    at Prepare.Command.execute (/Users/josep/angular-workspace/piworld-server/node_modules/mysql2/lib/commands/command.js:28:22)
+    at PoolConnection.Connection.handlePacket (/Users/josep/angular-workspace/piworld-server/node_modules/mysql2/lib/connection.js:515:28)
+    at PacketParser.onPacket (/Users/josep/angular-workspace/piworld-server/node_modules/mysql2/lib/connection.js:94:16)
+    at PacketParser.executeStart (/Users/josep/angular-workspace/piworld-server/node_modules/mysql2/lib/packet_parser.js:77:14)
+    at Socket.<anonymous> (/Users/josep/angular-workspace/piworld-server/node_modules/mysql2/lib/connection.js:102:29)
+    at emitOne (events.js:116:13)
+    at Socket.emit (events.js:211:7)
+    at addChunk (_stream_readable.js:263:12)
+    at readableAddChunk (_stream_readable.js:250:11)
+2017-11-05T14:56:08.885Z - info: Sun Nov 05 2017 15:56:08 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T14:56:08.900Z - debug: query= SELECT `id` as `idUser`,`fullname` FROM `users` WHERE  `username`=?  LIMIT 1 prepared= 0=pep.mulet
+2017-11-05T14:56:08.905Z - debug: rows.length=1
+2017-11-05T14:56:31.780Z - info: Sun Nov 05 2017 15:56:31 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T14:56:31.795Z - debug: query= SELECT `id` as `idUser`,`fullname` FROM `users` WHERE  `username`=? AND `idRole`=?  LIMIT 1 prepared= 0=pep.mulet, 1=222
+2017-11-05T14:56:31.800Z - debug: rows.length=0
+2017-11-05T15:02:27.475Z - info: Sun Nov 05 2017 16:02:27 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T15:03:28.432Z - info: Sun Nov 05 2017 16:03:28 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T15:03:28.448Z - debug: query= SELECT `id` as `idUser`,`fullname` FROM `users` WHERE  `username`=? AND `idRole`=?  LIMIT 1 prepared= 0=pep.mulet, 1=222
+2017-11-05T15:03:28.453Z - debug: rows.length=0
+2017-11-05T15:03:47.792Z - info: Sun Nov 05 2017 16:03:47 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T15:04:28.439Z - info: Sun Nov 05 2017 16:04:28 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T15:04:28.455Z - debug: query= SELECT `id` as `idUser`,`fullname` FROM `users` WHERE  `username`=? AND `idRole`=?  prepared= 0=pep.mulet, 1=522
+2017-11-05T15:04:28.460Z - debug: rows.length=0
+2017-11-05T15:05:11.949Z - info: Sun Nov 05 2017 16:05:11 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T15:05:11.964Z - debug: query= SELECT `id` as `idUser`,`fullname` FROM `users` WHERE  `username`=? AND `idRole`=?  prepared= 0=pep.mulet, 1=100
+2017-11-05T15:05:11.969Z - debug: rows.length=0
+2017-11-05T15:05:31.755Z - info: Sun Nov 05 2017 16:05:31 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T15:05:31.772Z - debug: query= SELECT `id` as `idUser`,`fullname` FROM `users` WHERE  `username`=?  prepared= 0=pep.mulet
+2017-11-05T15:05:31.777Z - debug: rows.length=1
+2017-11-05T15:05:46.180Z - info: Sun Nov 05 2017 16:05:46 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T15:05:46.196Z - debug: query= SELECT `id` as `idUser`,`fullname` FROM `users` WHERE 1=1 prepared=
+2017-11-05T15:05:46.203Z - debug: rows.length=901
+2017-11-05T15:06:00.690Z - info: Sun Nov 05 2017 16:06:00 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T15:06:00.706Z - debug: query= SELECT `id` as `idUser`,`fullname` FROM `users` WHERE 1=1 prepared=
+2017-11-05T15:06:00.713Z - debug: rows.length=901
+2017-11-05T15:06:07.579Z - info: Sun Nov 05 2017 16:06:07 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T15:06:07.595Z - debug: query= SELECT `id` as `idUser`,`fullname` FROM `users` WHERE 1=1 LIMIT 1 prepared=
+2017-11-05T15:06:07.599Z - debug: rows.length=1
+2017-11-05T15:06:28.505Z - info: Sun Nov 05 2017 16:06:28 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T15:06:28.520Z - debug: query= SELECT `id` as `idUser`,`fullname` FROM `users` WHERE 1=1 LIMIT 5 prepared=
+2017-11-05T15:06:28.524Z - debug: rows.length=5
+2017-11-05T15:09:43.565Z - info: Sun Nov 05 2017 16:09:43 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T15:09:43.582Z - debug: query= SELECT * FROM `users` WHERE  `id`=?  LIMIT 1 prepared= 0=522
+2017-11-05T15:09:43.588Z - debug: rows.length=1
+2017-11-05T15:10:13.152Z - info: Sun Nov 05 2017 16:10:13 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T15:10:13.167Z - debug: query= SELECT * FROM `users` WHERE  `id`=?  LIMIT 1 prepared= 0=522
+2017-11-05T15:10:13.172Z - debug: rows.length=1
+2017-11-05T15:10:13.174Z - debug: query= UPDATE `users` SET `username`=?,`fullname`=?,`password`=?,`emailParents`=?,`email`=?,`phone`=?,`uopts`=? WHERE id='522' prepared= 0=pep.mulet, 1=Josep Mulet, 2=j200175pep, 3=maria@gmail.com, 4=jmuletpol@gmail.com, 5=, 6={"avatar":"7"}
+2017-11-05T15:10:13.188Z - debug: nup=1
+2017-11-05T15:12:56.238Z - info: Sun Nov 05 2017 16:12:56 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T15:12:56.254Z - debug: query= SELECT * FROM `users` WHERE  `id`=?  LIMIT 1 prepared= 0=522
+2017-11-05T15:12:56.260Z - debug: rows.length=1
+2017-11-05T15:12:56.262Z - debug: query= INSERT INTO `users` (`username`,`fullname`,`password`,`emailParents`,`email`,`phone`,`uopts`) VALUES(?,?,?,?,?,?,?) prepared= 0=foobar, 1=Josep Mulet, 2=j200175pep, 3=maria@gmail.com, 4=jmuletpol@gmail.com, 5=, 6={"avatar":"7"}
+2017-11-05T15:12:56.272Z - debug: nup=1
+2017-11-05T15:15:11.723Z - info: Sun Nov 05 2017 16:15:11 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T15:15:11.738Z - debug: query= SELECT * FROM `users` WHERE  `id`=?  LIMIT 1 prepared= 0=522
+2017-11-05T15:15:11.743Z - debug: rows.length=1
+2017-11-05T15:15:11.745Z - debug: query= INSERT INTO `users` (`username`,`fullname`,`password`,`emailParents`,`email`,`phone`,`uopts`) VALUES(?,?,?,?,?,?,?) prepared= 0=foobar22, 1=Josep Mulet, 2=j200175pep, 3=maria@gmail.com, 4=jmuletpol@gmail.com, 5=, 6={"avatar":"7"}
+2017-11-05T15:15:11.755Z - debug: nup=1
+2017-11-05T15:27:34.865Z - info: Sun Nov 05 2017 16:27:34 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T15:27:34.880Z - debug: query= SELECT * FROM `users` WHERE  `id`=?  LIMIT 1 prepared= 0=522
+2017-11-05T15:27:34.886Z - debug: rows.length=1
+2017-11-05T15:27:54.069Z - info: Sun Nov 05 2017 16:27:54 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T15:27:54.084Z - debug: query= SELECT * FROM `users` WHERE  `id`=?  LIMIT 1 prepared= 0=522
+2017-11-05T15:27:54.089Z - debug: rows.length=1
+2017-11-05T15:27:54.091Z - debug: query= INSERT INTO `users` (`idRole`,`username`,`fullname`,`password`,`emailParents`,`mustChgPwd`,`email`,`phone`,`schoolId`,`created`,`valid`,`uopts`) VALUES(?,?,?,?,?,?,?,?,?,?,?,?) prepared= 0=110, 1=foobar22, 2=Josep Mulet, 3=j200175pep, 4=maria@gmail.com, 5=0, 6=jmuletpol@gmail.com, 7=, 8=4, 9=Sun Nov 05 2017 16:27:54 GMT+0100 (CET), 10=1, 11={"avatar":"7"}
+2017-11-05T15:27:54.093Z - debug: nup=1
+2017-11-05T15:38:18.788Z - info: Sun Nov 05 2017 16:38:18 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T15:38:32.531Z - info: Sun Nov 05 2017 16:38:32 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T15:39:05.377Z - info: Sun Nov 05 2017 16:39:05 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T15:39:05.392Z - debug: query= SELECT * FROM `users` WHERE  `id`=?  LIMIT 1 prepared= 0=522
+2017-11-05T15:39:05.397Z - debug: rows.length=1
+2017-11-05T15:39:05.399Z - debug: query= INSERT INTO `users` (`idRole`,`username`,`fullname`,`password`,`emailParents`,`mustChgPwd`,`email`,`phone`,`schoolId`,`created`,`valid`,`uopts`) VALUES(?,?,?,?,?,?,?,?,?,?,?,?) prepared= 0=110, 1=foobar22, 2=Josep Mulet, 3=j200175pep, 4=maria@gmail.com, 5=0, 6=jmuletpol@gmail.com, 7=, 8=4, 9=Sun Nov 05 2017 16:39:05 GMT+0100 (CET), 10=1, 11={"avatar":"7"}
+2017-11-05T15:39:05.409Z - debug: nup=1
+2017-11-05T16:25:32.051Z - info: Sun Nov 05 2017 17:25:32 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T16:25:44.171Z - info: Sun Nov 05 2017 17:25:44 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T16:27:00.663Z - info: Sun Nov 05 2017 17:27:00 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T16:27:11.741Z - info: Sun Nov 05 2017 17:27:11 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T16:27:22.541Z - info: Sun Nov 05 2017 17:27:22 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T16:42:36.142Z - info: Sun Nov 05 2017 17:42:36 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T16:43:53.429Z - info: Sun Nov 05 2017 17:43:53 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T16:44:21.479Z - info: Sun Nov 05 2017 17:44:21 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T16:44:35.228Z - info: Sun Nov 05 2017 17:44:35 GMT+0100 (CET): piWorld server started, listening to port 3200
+2017-11-05T16:47:36.517Z - info: Sun Nov 05 2017 17:47:36 GMT+0100 (CET): piWorld server started, listening to port 3200

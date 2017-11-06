@@ -1,0 +1,39 @@
+{
+  "name": "piworld-server",
+  "version": "1.0.0",
+  "description": "A nodejs server for piworld web apps",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jmulet/piworld-server.git"
+  },
+  "keywords": [
+    "piworld",
+    "webapp",
+    "nodejs"
+  ],
+  "author": "Josep Mulet (pep.mulet@gmail.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jmulet/piworld-server/issues"
+  },
+  "homepage": "https://github.com/jmulet/piworld-server#readme",
+  "dependencies": {
+    "ts-node": "^3.3.0",
+    "nodemailer": "4.3.1",
+    "express": "^4.16.2",
+    "compression": "^1.7.1",
+    "winston": "^2.4.0",
+    "express-winston": "^2.4.0",
+    "body-parser": "^1.18.2",
+    "method-override": "^2.3.10",
+    "socket.io": "^2.0.4",
+    "sequelize": "^4.22.5",
+    "mysql2": "^1.4.2",
+    "excel4node": "^1.2.1"
+  }
+}
