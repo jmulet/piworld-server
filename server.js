@@ -6,7 +6,9 @@
 var config;
 try {
     config = require('./server.config');
-} catch(Ex) {
+} catch (Ex) {
+    console.log(Ex);
+
     console.log("========================================================");
     console.log("= piworld-server  by J. Mulet (pep.mulet@gmail.com)    =");
     console.log("========================================================");
@@ -17,12 +19,10 @@ try {
 }
 
 var path = require('path'),
-    domain = require('domain'),
     express = require('express'),
     app = express(),
     server = require('http').Server(app),
     io = require('socket.io')(server),
-    d = domain.create(),
     bodyParser = require('body-parser'),
     methodOverride = require('method-override'),
     mysql = require('mysql2'),
@@ -31,31 +31,46 @@ var path = require('path'),
     compression = require('compression');
 
 
-d.on('error', function(err) {
-    console.error(err);
-});
-
 winston.exitOnError = false;
 
-winston.add(winston.transports.File, { 
+winston.add(winston.transports.File, {
     name: 'info-log',
-    filename: './log/piworld-server.log', 
+    filename: './log/piworld-server.log',
     json: false,
-    level: config.logLevel || 'verbose'}  //Replace 'debug' by 'verbose'
+    level: config.logLevel || 'verbose'
+}  //Replace 'debug' by 'verbose'
 );
-    
+
 app.enable('trust proxy');
 //You can optionally use compression. Disabled here since compression is activated in ngnix
 // app.use(compression());
-app.use(bodyParser.urlencoded({limit: '100mb', extended: false}));
-app.use(bodyParser.json({limit: '100mb'}));
-app.use(bodyParser.text({limit: '100mb'}));
+app.use(bodyParser.urlencoded({ limit: '100mb', extended: false }));
+app.use(bodyParser.json({ limit: '100mb' }));
+app.use(bodyParser.text({ limit: '100mb' }));
 app.use(methodOverride());
 
-app.config = config;
-app.APIS = {};
 
- 
+app.all('/*', function(req, res, next) {
+    // CORS headers
+    res.header("Access-Control-Allow-Origin", "*"); // restrict it to the required domain
+    res.header('Access-Control-Allow-Methods', 'GET,PUT,POST,DELETE,OPTIONS');
+    // Set custom headers for CORS
+    res.header('Access-Control-Allow-Headers', 'Content-type,Accept,X-Access-Token,X-Key');
+    if (req.method == 'OPTIONS') {
+      res.status(200).end();
+    } else {
+      next();
+    }
+  });
+   
+  // Auth Middleware - This will check if the token is valid
+  // Only the requests that start with /api/v1/* will be checked for the token.
+  // Any URL's that do not follow the below pattern should be avoided unless you 
+  // are sure that authentication is not needed
+app.all('/api/v1/*', [require('./middlewares/mdw-validateRequest')]);
+
+app.config = config;
+
 app.parseCookies = function (request) {
     var list = {},
         rc = request.headers ? request.headers.cookie : request;
@@ -84,51 +99,18 @@ app.parseCookies = function (request) {
 global.__publicDir = path.resolve(__dirname, "../piWorld/public");
 global.__serverDir = path.resolve(__dirname, "./");
 
+if (app.config.platform !== 'linux') {
+    var staticPath = path.resolve(__dirname, 'public');
+    app.use(express.static(staticPath, { lastModified: true }));
+}
 
+// Load modules
 
-d.run(function() {
-    
-    if (app.config.platform !== 'linux') {
-        var staticPath = path.resolve(__dirname, 'public');
-        app.use(express.static(staticPath, { lastModified: true }));
-    }
- 
-    server.listen(config.express.port, function () {
-        winston.info(new Date() + ': piWorld server started, listening to port ' + config.express.port);
+require('./users/users')(app);
+require('./books/books')(app);
+require('./news/news')(app);
+require('./centers/centers')(app);
 
-        const p = require('./mysql/pool');
-     
-        const models = require('./mysql/models');
-
-        models.Users.all().then((d)=> {
-            console.log(d);
-        });
-        /**
-        const foo = async function(id){
-            
-            try {
-                const data = await db.queryIfNotEmpty("SELECT * FROM users WHERE id=?", "SELECT * FROM logins WHERE idUser=?", [id], [id]); 
-                console.log(data);
-            } catch(Ex){
-                console.log(Ex);
-            }
-            
-        };
- 
-        const Users = require('./mysql/models').Users;
-
-        Users.find( {id: 522}, {limit: 1}).then(d => {
-            const user = d.results[0];
-            user.username = "foobar22";
-            user.created = new Date();
-            user.id = null;
-            console.log(user)
-            Users.save(user).then( r => console.log(r) );
-        });
-
-        **/
-
-    });
-
-
+server.listen(config.express.port, function () {
+    winston.info(new Date() + ': piWorld server started, listening to port ' + config.express.port);
 });

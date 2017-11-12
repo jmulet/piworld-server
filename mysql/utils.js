@@ -13,23 +13,13 @@ class MappingModel {
                 this.PK = fname;
             }
         }
-        this.mappings = []; 
+        
     }
 
     clone() {
         return new MappingModel(this.tableName, this.fields);
     }
-
-    innerJoin(mapping, key) {
-        this.mappings.push({mm: mapping, k: key, t: "INNER JOIN"});
-        return this;
-    }
-
-    leftJoin(mapping, key) {
-        this.mappings.push({mm: mapping, k: key, t: "LEFT JOIN"});
-        return this;
-    }
-
+  
     createSelects(opts) {
         if (!opts ||  !opts.select) {
             return '*';
@@ -109,13 +99,7 @@ class MappingModel {
 
     all(opts) {
         const selects = this.createSelects(opts);
-        let sql = "SELECT " + selects + " FROM `" + this.tableName+ "` ";
-        this.mappings.forEach((x)=> {
-            sql += x.type + " `"+ x.mm.tableName + "` ON ";
-            if (x.key) {
-                sql += "`" + this.tableName + "`.`" + key + "`=`"+ x.mm.tableName + "`.`" + x.mm.;
-            }
-        });
+        let sql = "SELECT " + selects + " FROM `" + this.tableName+ "` ";      
         return db.query(sql);
     }
 

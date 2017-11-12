@@ -13,7 +13,8 @@ var config = {
         undefined: 400,
         parents: 500
     },
-    AES_SECRET: "",         //Secret for encryption (optional)
+    jwt_secret: "",         //Secret for auth middleware (required)
+    AES_SECRET: "",         //Secret for encryption (optional)    
     LANGS: ['ca', 'es', 'en'],
     hostname: 'localhost:3000',
     adminUser: 'root',

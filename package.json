@@ -23,17 +23,20 @@
   },
   "homepage": "https://github.com/jmulet/piworld-server#readme",
   "dependencies": {
-    "ts-node": "^3.3.0",
-    "nodemailer": "4.3.1",
-    "express": "^4.16.2",
-    "compression": "^1.7.1",
-    "winston": "^2.4.0",
-    "express-winston": "^2.4.0",
+    "async": "^2.6.0",
     "body-parser": "^1.18.2",
+    "compression": "^1.7.1",
+    "excel4node": "^1.2.1",
+    "express": "^4.16.2",
+    "express-winston": "^2.4.0",
     "method-override": "^2.3.10",
-    "socket.io": "^2.0.4",
-    "sequelize": "^4.22.5",
     "mysql2": "^1.4.2",
-    "excel4node": "^1.2.1"
+    "nodemailer": "^4.4.0",
+    "pm2": "^2.7.2",
+    "sequelize": "^4.22.5",
+    "socket.io": "^2.0.4",
+    "ts-node": "^3.3.0",
+    "winston": "^2.4.0",
+    "jwt-simple": "^0.5.1"
   }
 }

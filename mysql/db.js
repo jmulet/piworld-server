@@ -1,5 +1,20 @@
+/*
+*   Wrapper around mysql2
+*   Automatic handle/release of pooled connections
+*   Unified query(sql, objects) syntax
+*   returns a promise -> .results contains the array of rows
+*   in a select query or and object in any other case.
+*
+*   Additions:
+*    - queryIf, queryIfEmpty, queryIfNotEmpty
+*
+*    - querySeries([sql], [objects])  -> Returns a list of results.
+*    - queryParallel([sql], [objects])  -> Returns a list of results.
+*/ 
+ 
 const pool = require('./pool'),
-    winston = require('winston');
+    winston = require('winston'),
+    async = require('async');
 
 const emptyResults = function (sql) {
     const text = (sql ||  '').toLowerCase().trim();
@@ -27,7 +42,7 @@ const db = {
         return new Promise((resolve, reject) => {
             pool.getConnection((err, con) => {
                 if (err) {
-                    console.log(err);
+                    winston.log('error', err);
                     resolve(null);
                 }
                 else {
@@ -129,6 +144,28 @@ const db = {
 
     queryIfNotEmpty: function (testSql, sql, objsTest, objs) {
         return db.queryIf(testSql, sql, IfNotEmptyFn, objsTest, objs);
+    },
+
+    querySeries: async function (sqls, objs) {
+        objs = objs || [];
+        let i = 0;
+        const qs = [];
+        for (const sql of sqls) {
+                let sql2 = sql;
+                if (typeof(sql2) === "function"){
+                    sql2 = sql(qs);
+                }
+                const res = await db.query(sql2, objs[i]);
+                qs.push(res);
+                i += 1;
+        }         
+
+        return Promise.all(qs);
+    },
+
+    queryParallel: function (sqls, objs) {
+        objs = objs || [];
+        return Promise.all( sqls.map((sql, i) => db.query(sql, objs[i]) ));
     }
 };
 
