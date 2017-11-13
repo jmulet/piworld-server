@@ -1,8 +1,8 @@
-
-var mysql2 = require('mysql2');
-var config = require('../server.config');
-
-var pool = mysql2.createPool({
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const mysql2 = require("mysql2");
+const config = require('../server.config');
+exports.pool = mysql2.createPool({
     host: config.mysql.host || 'localhost',
     port: config.mysql.port || 3306,
     user: config.mysql.user || 'root',
@@ -12,5 +12,4 @@ var pool = mysql2.createPool({
     connectionLimit: 49,
     bigNumberStrings: true
 });
-
-module.exports = pool;
+//# sourceMappingURL=pool.js.map

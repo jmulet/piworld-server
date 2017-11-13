@@ -1,8 +1,7 @@
-var extend = require('util')._extend;
-
-var platform = process.platform;
-
-var config = {
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+const _platform = process.platform;
+const _config = {
     USER_ROLES: {
         admin: 0,
         teacher: 100,
@@ -13,55 +12,48 @@ var config = {
         undefined: 400,
         parents: 500
     },
-    jwt_secret: "",         //Secret for auth middleware (required)
-    AES_SECRET: "",         //Secret for encryption (optional)    
+    AES_SECRET: '',
+    jwt_secret: '',
     LANGS: ['ca', 'es', 'en'],
     hostname: 'localhost:3000',
     adminUser: 'root',
-    adminPassword: '',      //Set a password for admin user
-    adminLang: 'ca',
-    adminEmail: '',         //Set an email for site admin
-    adminEmailPass: '',     //Set a password for email admin
-    mathpix: { },           //Configure mathpix account (optional)
-    API_KEY: "",            //Set google apps api key
-    oauth2: {               //Configure oauth2 for google app
-        accessToken: "",
-        refreshToken: "", 
-        token_type: "", 
+    adminPassword: '',
+    adminLang: 'en',
+    adminEmail: '',
+    adminEmailPass: '',
+    mathpix: {},
+    API_KEY: '',
+    oauth2: {
+        accessToken: '',
+        refreshToken: '',
+        token_type: 'Bearer',
         expires: 0,
-        clientId: "", 
-        project_id: "",
-        auth_uri: "", 
-        token_uri: "",
-        auth_provider_x509_cert_url: "",
-        clientSecret: "", 
-        redirect_uris: ["", ""]
+        clientId: '', 'project_id': '',
+        auth_uri: '', 'token_uri': '',
+        auth_provider_x509_cert_url: '',
+        clientSecret: '',
+        redirect_uris: ['', '']
     },
     badges: {
-        CMT: { id: 1, desc: "Comment bagde", score: 10, EVERY: 4 },
-        REG: { id: 2, desc: "Regularity bagde", score: 100, EVERY: 3 },
-        BOW: { id: 3, desc: "Best of weeek bagde", score: 200, MIN: 100 },
-        BOM: { id: 4, desc: "Best of month bagde", score: 300, MIN: 500 },
-        CHL: { id: 5, desc: "Weekly challenge badge", score: 140 }
+        CMT: { id: 1, desc: 'Comment bagde', score: 10, EVERY: 4 },
+        REG: { id: 2, desc: 'Regularity bagde', score: 100, EVERY: 3 },
+        BOW: { id: 3, desc: 'Best of weeek bagde', score: 200, MIN: 100 },
+        BOM: { id: 4, desc: 'Best of month bagde', score: 300, MIN: 500 },
+        CHL: { id: 5, desc: 'Weekly challenge badge', score: 140 }
     }
-
 };
-
-var platform_config = {};
-
-if (platform.indexOf('win') === 0) {
-    console.log("Node platform windows");
-
-    platform_config = {
+let platformConfig;
+if (_platform.indexOf('win') === 0) {
+    console.log('Node platform windows');
+    platformConfig = {
         //Configure the database connection here
         mysql: {
             host: 'localhost',
             port: 3306,
-            user: '',               //Set mysql user
-            password: '',           //Set mysql password
+            user: 'root',
+            password: '',
             database: 'imaths'
         },
-
         //Configure executable and temporal paths here
         paths: {
             maxima: 'c:\\Maxima-5.31.2\\bin\\maxima.bat',
@@ -71,27 +63,23 @@ if (platform.indexOf('win') === 0) {
             tmp: 'c:\\imaths-tmp\\',
             mysqldump: ''
         },
-
         express: {
             port: 3000
         },
-
-        logLevel: 'debug'
-
+        logLevel: 'verbose'
     };
-} else if (platform === 'darwin') {
-    console.log("Node platform darwin");
-  
-    platform_config = {
+}
+else if (_platform === 'darwin') {
+    console.log('Node platform darwin');
+    platformConfig = {
         //Configure the database connection here
         mysql: {
             host: 'localhost',
             port: 3306,
-            user: '',               //Set mysql user
-            password: '',           //Set mysql password
+            user: 'root',
+            password: '',
             database: 'imaths'
         },
-
         //Configure executable and temporal paths here
         paths: {
             maxima: '/Applications/Maxima.app/Contents/Resources/maxima.sh',
@@ -102,27 +90,23 @@ if (platform.indexOf('win') === 0) {
             tmp: '/Users/josep/imaths-tmp/',
             mysqldump: '/usr/local/mysql/bin/mysqldump'
         },
-
         express: {
             port: 3200
         },
         logLevel: 'debug'
     };
 }
-else if (platform === 'linux') {
-    console.log("Node platform linux");
-    config.hostname = '46.101.208.135';
-
-    platform_config = {
-
+else if (_platform === 'linux') {
+    console.log('Node platform linux');
+    _config.hostname = '46.101.208.135';
+    platformConfig = {
         mysql: {
             host: 'localhost',
             port: 3306,
-            user: '',               //Set mysql user
-            password: '',           //Set mysql password
+            user: '',
+            password: '',
             database: 'imaths'
         },
-
         //Configure executable and temporal paths here
         paths: {
             maxima: '/usr/bin/maxima',
@@ -133,20 +117,17 @@ else if (platform === 'linux') {
             tmp: '/root/imaths-tmp/',
             mysqldump: '/usr/bin/mysqldump'
         },
-
         express: {
             port: 3000
         },
-
         logLevel: 'warn'
     };
 }
 else {
-    console.log("Please provide a configuration for platform ", platform);
+    console.log('Please provide a configuration for platform ', _platform);
     process.exit(1);
 }
-platform_config.platform = platform;
-
 // Choose here your preferred configuration
-module.exports = extend(config, platform_config);
-
+exports.config = Object.assign({}, _config, platformConfig, { platform: _platform });
+module.exports = exports.config;
+//# sourceMappingURL=server-config.js.map

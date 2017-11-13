@@ -5,7 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "build": "tsc",
+    "start": "cd build && node ."
   },
   "repository": {
     "type": "git",
@@ -26,9 +27,11 @@
     "async": "^2.6.0",
     "body-parser": "^1.18.2",
     "compression": "^1.7.1",
+    "dateformat": "^3.0.2",
     "excel4node": "^1.2.1",
     "express": "^4.16.2",
     "express-winston": "^2.4.0",
+    "jwt-simple": "^0.5.1",
     "method-override": "^2.3.10",
     "mysql2": "^1.4.2",
     "nodemailer": "^4.4.0",
@@ -36,7 +39,20 @@
     "sequelize": "^4.22.5",
     "socket.io": "^2.0.4",
     "ts-node": "^3.3.0",
-    "winston": "^2.4.0",
-    "jwt-simple": "^0.5.1"
+    "winston": "^2.4.0"
+  },
+  "devDependencies": {
+    "@types/async": "^2.0.45",
+    "@types/dateformat": "^1.0.1",
+    "@types/express": "^4.0.39",
+    "@types/jwt-simple": "^0.5.33",
+    "@types/method-override": "0.0.31",
+    "@types/mysql2": "github:types/mysql2",
+    "@types/node": "^8.0.51",
+    "@types/nodemailer": "^4.3.0",
+    "@types/socket.io": "^1.4.31",
+    "@types/winston": "^2.3.7",
+    "tslint": "^5.8.0",
+    "typings": "^2.1.1"
   }
 }

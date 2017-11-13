@@ -1,0 +1,1 @@
+{"version":3,"file":"remover.js","sourceRoot":"/Users/josep/programacio/piworld-server/src/","sources":["misc/remover.ts"],"names":[],"mappings":";;AAAa,QAAA,OAAO,GAAG;IAEnB,SAAS,EAAE,UAAU,QAAgB;QACjC,MAAM,CAAC,IAAI,OAAO,CAAE,CAAC,OAAO,EAAE,MAAM,EAAE,EAAE;YACpC,OAAO,CAAC,EAAE,CAAC,CAAC;QAChB,CAAC,CAAC,CAAC;IACP,CAAC;CACJ,CAAC"}
